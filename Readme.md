@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Давыдов](https://up.htmlacademy.ru/htmlcss/30/user/670549).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Бессалов] (https://htmlacademy.ru/profile/lvov).
 
 ---
 
