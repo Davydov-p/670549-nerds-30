@@ -426,14 +426,14 @@ h1.shop {
   font-weight: 400;
   color: var(--primary-dark);
 }
-
+/*
 .sorting-list .sorting-item:first-child a {
   color: var(--basic-black);
 }
 .sorting-list .sorting-item:last-child a {
   color: var(--color-arrow-dark);
 }
-
+*/
 .filter li:hover {
   color: var(--primary-dark);
 }
