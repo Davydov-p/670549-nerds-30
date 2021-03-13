@@ -2,45 +2,59 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="favicons.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page-body">
+    <header class="main-header catalog-header">
+      <nav class="main-navigation">
+        <a class="main-logo" href="index.html">
           <img src="img/logo/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
         <ul>
-          <li><a href="blank.html">Корзина</a></li>
+          <li class="basket"><a href="blank.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
-    <footer>
-      <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом студии">
-      <img src="img/map-marker.png" width="231" height="190" alt="Точка на карте с адресом студии">
-      <section>
+    <footer class="main-footer">
+      <div class="footer-map">
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом студии">
+        <img src="img/map-marker.png" width="231" height="190" alt="Точка на карте с адресом студии">
+      </div>
+      <section class="footer-contact">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>
+        <p class="address">
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
         </p>
-        <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-        <button type="button">НАПИШИТЕ НАМ</button>
+        <a class="phone-number" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        <button class="button feedback-button" type="button">НАПИШИТЕ НАМ</button>
       </section>
-      <section>
-        <h3>Социальные сети</h3>
-        <ul>
-          <li><a href="https://vk.com"><img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a></li>
-          <li><a href="https://facebook.com"><img src="img/icons/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-          <li><a href="https://instagram.com"><img src="img/icons/insta-icon.svg" width="21" height="21" alt="Instagram"></a></li>
+      <section class="footer-social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="https://vk.com"><img src="img/icons/vk-icon.svg" width="26.01" height="15" alt="Вконтакте"></a></li>
+          <li class="social-item">
+            <a class="social-button" href="https://facebook.com"><img src="img/icons/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li class="social-item">
+            <a class="social-button" href="https://instagram.com"><img src="img/icons/insta-icon.svg" width="21" height="21" alt="Instagram"></a></li>
         </ul>
-        <p><b>Давайте дружить, это выгодно!<b></p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="discount">
+          <p class="call"><b>Давайте дружить, это выгодно!<b></p>
+          <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>

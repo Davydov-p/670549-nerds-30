@@ -1,0 +1,447 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --primary-dark: #283136;
+  --secondary-dark: 666666;
+  --basic-neutral: #444444;
+  --basic-white: #ffffff;
+
+  --secondary-light: #EEEEEE;
+  --color-red: #FB565A;
+  --color-red-hover: #E74246;
+  --color-red-active: #D7373B;
+  --color-green: #00CA74;
+  --color-green-hover: #00BC6C;
+  --color-green-active: #00AA62;
+  --color-orange: #EFC849;
+  --color-orange-hover: #EAB534;
+  --color-orange-active: #E5A722;
+  --color-social: #E1E1E1;
+  --transparent-light: rgba(255, 255, 255, 0.3);
+  --transparent-black: rgba(0, 0, 0, 0.3);
+  --transparent-black-light: rgba(0, 0, 0, 0.2);
+  --transparent-black-dark: rgba(0, 0, 0, 0.6);
+  --transparent-black-disabled: rgba(40, 49, 54, 0.3);
+  --transparent-more-light: rgba(255, 255, 255, 0.1);
+  --color-transparent-close: rgba(251, 86, 90, 0.3);
+  --color-transparent-close-light: rgba(251, 86, 90, 0.1);
+  --color-border-light: #D7DCDE;
+  --color-border-hover: #B4B9BB;
+  --color-border-invalid: #E74246;
+  --Logo-active: #A6A6A6;
+  --catalog-light-hover: #DFDFDF;
+  --catalog-light-active: #D5D5D5;
+  --catalog-light-focus: #DBDBDB;
+  --color-arrow-dark: #231F20;
+}
+/*---------------------------------index.html---------------------------------*/
+.page-body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--primary-dark);
+  background-color: var(--basic-white);
+}
+
+.page-body a {
+  text-decoration: none;
+}
+
+.site-navigation,
+.basket,
+.services-list,
+.facts-list,
+.clients-list,
+.social-list,
+/*каталог*/
+.grid-list,
+.features-list,
+.sorting-list,
+.templates-list,
+.pagination {
+  list-style: none;
+}
+
+.services-list li,
+.facts-list li,
+.clients-list li,
+.social-list li,
+/*каталог*/
+.sorting-list li,
+.pagination li {
+  display: inline-block;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-navigation a {
+  color: var(--basic-black);
+}
+
+.slider {
+  font: inherit;
+  color: var(--primary-dark);
+}
+
+.slide-heading {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.info {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.options,
+.studio-facts p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.facts-item {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--primary-dark);
+  display: inline-block;
+}
+
+li.facts-item p {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--basic-black);
+  padding: 0;
+  margin: 0;
+}
+
+p.percent span {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  vertical-align: text-top;
+}
+
+.footer-contact h3 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.address,
+.phone-number {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--secondary-dark);
+}
+
+p.call {
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center;
+}
+
+p.sale {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-neutral);
+  text-align: center;
+}
+.container-upper {
+  background-color: var(--secondary-light);
+}
+/*навигация*/
+.main-navigation a:hover {
+  color: var(--color-red);
+}
+.main-navigation a:active {
+  color: var(--transparent-black);
+}
+/*Активный вид кнопки не получилось сделать, переопределяет стиль нажатия
+(нажатие и активный элемент, после нажатия должны быть разные (становится всё по стилям как для активного элемента))
+.main-navigation a:focus {
+  color: var(--basic-black);
+  border-bottom: 2px solid var(--color-red);
+}*/
+
+.visually-hidden {
+  visibility:hidden;
+}
+
+.clients-list a {
+  opacity: 0.2;
+}
+
+.clients-list a:hover {
+  opacity: 1;
+}
+
+.clients-list a:active {
+  opacity: 0.1;
+}
+/*оформления кнопок*/
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+  outline: 0;
+}
+
+.more-info-button,
+.order-button-red,
+.button.send-button,
+.button.feedback-button,
+.description-box button {
+  color: var(--basic-white);
+  background-color: var(--color-red);
+}
+
+.more-info-button:hover,
+.order-button-red:hover,
+.button.send-button:hover,
+.button.feedback-button:hover,
+.description-box button:hover {
+  background-color: var(--color-red-hover);
+}
+.more-info-button:active,
+.order-button-red:active,
+.button.send-button:active,
+.button.feedback-button:active,
+.description-box button:active {
+  color: var(--transparent-light);
+  background-color: var(--color-red-active);
+}
+
+.button.close-button {
+  background-color: var(--color-transparent-close);
+}
+.button.close-button:hover {
+  background-color: var(--color-red);
+}
+.button.close-button:active {
+  background-color: var(--color-transparent-close-light);
+}
+
+.order-button-green {
+  background-color: var(--color-green);
+}
+
+.order-button-green:hover {
+  background-color: var(--color-green-hover);
+}
+
+.order-button-green:active {
+  color: var(--transparent-light);
+  background-color: var(--color-green-active);
+}
+
+.order-button-orange {
+  background-color: var(--color-orange);
+}
+
+.order-button-orange:hover {
+  background-color: var(--color-orange-hover);
+}
+
+.order-button-orange:active {
+  color: var(--transparent-light);
+  background-color: var(--color-orange-active);
+}
+
+.social-button {
+  background-color: var(--color-social);
+  display: inline-block;
+}
+
+.social-button:hover {
+  background-color: var(--color-red-hover);
+}
+
+.social-button:active {
+  background-color: var(--color-red-active);
+}
+/*-----------------------------------pop-up-----------------------------------*/
+.modal-window h2 {
+  font-size: 45px;
+  line-height: auto;
+  font-weight: 700;
+}
+
+.feedback-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.feedback-form input {
+  font-family: inherit;
+  font-weight: 400;
+  color: var(--basic-neutral);
+}
+
+.modal-window textarea {
+  font-family: inherit;
+  color: var(--basic-neutral);
+}
+
+.modal-window input,
+.modal-window textarea {
+  border: 2px solid;
+  border-color: var(--color-border-light);
+}
+
+.modal-window input:hover,
+.modal-window textarea:hover {
+  border-color: var(--color-border-hover);
+}
+
+.modal-window input:focus,
+.modal-window textarea:focus {
+  border-color: var(--basic-black);
+}
+/*накладываются 2 цвета*/
+.modal-window input:invalid,
+.modal-window textarea:invalid {
+  border-color: var(--color-border-invalid);
+}
+/*--------------------------------catalog.html--------------------------------*/
+/*наведение на лого
+.main-logo a:active {
+}*/
+
+.main-header.catalog-header {
+  background-color: var(--secondary-light);
+}
+
+h1.shop {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.filter legend,
+.sorting p,
+.description-box h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting-list li {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--transparent-black);
+}
+
+.description-box p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--secondary-dark);
+}
+
+.pagination a,
+.filter-container button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--secondary-light);
+}
+
+.pagination a:hover,
+.filter-container button:hover {
+  background-color: var(--catalog-light-hover);
+}
+
+.pagination a:active,
+.filter-container button:active {
+  background-color: var(--catalog-light-active);
+  color: var(--transparent-black);
+}
+
+/* Активный вид кнопки не получилось сделать, переопределяет стиль нажатия
+(нажатие и активный элемент, после нажатия должны быть разные (становится всё по стилям как для активного элемента))
+.pagination a:focus {
+  background-color: transparent;
+  border: 2px solid red;
+}*/
+
+/*.description-box button {
+  color: var(----basic-black);
+  background-color: var(--secondary-light);
+}*/
+
+.description-box button:active {
+  color: var(--basic-white);
+}
+
+.description-box h3:hover {
+  color: var(--color-red);
+}
+
+.description-box h3:active {
+  color: var(--transparent-black);
+}
+
+.sorting-list a {
+  color: var(--transparent-black);
+}
+
+.sorting-list a:hover {
+  color: var(--transparent-black-dark);
+}
+
+.sorting-list a:active,
+.sorting-list a:focus {
+  color: var(--basic-black);
+}
+
+.filter li {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--primary-dark);
+}
+
+.sorting-list .sorting-item:first-child a {
+  color: var(--basic-black);
+}
+.sorting-list .sorting-item:last-child a {
+  color: var(--color-arrow-dark);
+}
+
+.filter li:hover {
+  color: var(--primary-dark);
+}
+
+.filter li:disabled {
+  color: var(--transparent-black-disabled);
+}
+
+.filter fieldset {
+  border: none;
+}
