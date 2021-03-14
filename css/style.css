@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
   --basic-black: #000000;
   --primary-dark: #283136;
@@ -166,18 +165,19 @@ p.sale {
   background-color: var(--secondary-light);
 }
 /*навигация*/
+/*изменение цвета при наведении - выделяет красным*/
 .main-navigation a:hover {
   color: var(--color-red);
 }
+
+.site-navigation a.active {
+  color: var(--basic-black);
+  border-bottom: 2px solid var(--color-red);
+}
+
 .main-navigation a:active {
   color: var(--transparent-black);
 }
-/*Активный вид кнопки не получилось сделать, переопределяет стиль нажатия
-(нажатие и активный элемент, после нажатия должны быть разные (становится всё по стилям как для активного элемента))
-.main-navigation a:focus {
-  color: var(--basic-black);
-  border-bottom: 2px solid var(--color-red);
-}*/
 
 .visually-hidden {
   visibility:hidden;
@@ -324,10 +324,11 @@ p.sale {
   border-color: var(--color-border-invalid);
 }
 /*--------------------------------catalog.html--------------------------------*/
-/*наведение на лого
-.main-logo a:active {
-}*/
+/*наведение на лого, не знаю как изменить цвет svg
+.main-header.catalog-header img:active {
 
+}
+*/
 .main-header.catalog-header {
   background-color: var(--secondary-light);
 }
@@ -371,29 +372,23 @@ h1.shop {
   color: var(--basic-black);
   background-color: var(--secondary-light);
 }
-
+/*выделение при наведении*/
 .pagination a:hover,
 .filter-container button:hover {
   background-color: var(--catalog-light-hover);
 }
-
+/*изменение при нажатии*/
 .pagination a:active,
 .filter-container button:active {
   background-color: var(--catalog-light-active);
   color: var(--transparent-black);
 }
 
-/* Активный вид кнопки не получилось сделать, переопределяет стиль нажатия
-(нажатие и активный элемент, после нажатия должны быть разные (становится всё по стилям как для активного элемента))
-.pagination a:focus {
-  background-color: transparent;
-  border: 2px solid red;
-}*/
 
-/*.description-box button {
-  color: var(----basic-black);
-  background-color: var(--secondary-light);
-}*/
+.pagination a.active {
+  background-color: transparent;
+  border: 2px solid var(--catalog-light-focus);
+}
 
 .description-box button:active {
   color: var(--basic-white);
@@ -426,14 +421,14 @@ h1.shop {
   font-weight: 400;
   color: var(--primary-dark);
 }
-/*
+
 .sorting-list .sorting-item:first-child a {
   color: var(--basic-black);
 }
 .sorting-list .sorting-item:last-child a {
   color: var(--color-arrow-dark);
 }
-*/
+
 .filter li:hover {
   color: var(--primary-dark);
 }
